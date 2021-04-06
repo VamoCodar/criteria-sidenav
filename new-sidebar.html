@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://django-criteria.s3.amazonaws.com/static/assets/styles/css/themes/lite-blue.min.css">
+    <link rel="stylesheet" href="https://intranet.novadata.com.br/intranets/criteria/admin/admin_bernardo.css">
+    <link rel="stylesheet" href="https://intranet.novadata.com.br/intranets/criteria/bernardo.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-submenu@3.0.1/dist/css/bootstrap-submenu.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <title>Criteria new sidebar</title>
+</head>
+
+<body>
+
+
+    <nav class="menu"><button>
+            <ion-icon class="icon__click" name="menu-outline"></ion-icon>
+        </button></nav>
+
+    <div class="side__content" data-open="">
+        <div class="sidebar__left">
+
+            <!-- SIDEBAR PRINCIPAL -->
+            <ul class="lista">
+                <li><a href="#">
+                        <img src="https://django-criteria.s3.amazonaws.com/static/assets/images/inicio.png" alt="">
+                        <span>Inicio</span></a>
+                </li>
+
+                <li>
+                    <a href="#" data-open="1">
+                        <img src="https://django-criteria.s3.amazonaws.com/static/assets/images/product.png" alt="">
+                        <span>Produtos Criteria</span>
+                    </a>
+                </li>
+
+                <li><a href="#" data-open="2">
+                        <img src="https://django-criteria.s3.amazonaws.com/static/assets/images/target.png" alt="">
+                        <span>Indicações para Mesas</span>
+                    </a></li>
+                <li>
+
+                    <a href="#" data-open="3">
+                        <img src="https://django-criteria.s3.amazonaws.com/static/assets/images/promotion.png" alt="">
+                        <span>Material Comercial</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- SIDEBAR SECUNDARIA 1 -->
+            <div class="sidebar__left-secondary side__1">
+                <ul>
+                    <span>Campanhas Criteria</span>
+                    <li><a href="#">Todas as Campanhas</a></li>
+                    <span>Ofertas Públicas</span>
+                    <li><a href="#">Todas as ofertas</a></li>
+                    <li><a href="#">Fundos Imobiliarios</a></li>
+                    <li><a href="#">Credito Privado</a></li>
+                    <li><a href="#">Outros</a></li>
+                    <span>Caterias</span>
+                    <li><a href="#">fundos imobiliários</a></li>
+                    <span>Alocaçoes</span>
+                    <li><a href="#">Fundos Multimercado</a></li>
+
+
+                    <li class="nav-item dropdown-sidemenu js-posicao">
+                        <a href="#">Dropdown Left <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    </li>
+
+
+                    <li><a href="#">Fundos De Renda fixa</a></li>
+                    <li><a href="#">Fundos Imobiliários</a></li>
+                    <li><a href="#">Fundos De Renda Variavel</a></li>
+
+                </ul>
+            </div>
+
+            <!-- SIDEBAR SECUNDARIA 2 -->
+            <div class="sidebar__left-secondary side__2">
+                <ul>
+                    <span>Campanhas Criteria</span>
+                    <li><a href="#">Todas as Campanhas</a></li>
+                    <span>Ofertas Públicas</span>
+                    <li><a href="#">Todas as ofertas</a></li>
+                    <li><a href="#">Fundos Imobiliarios</a></li>
+                    <li><a href="#">Credito Privado</a></li>
+                    <li><a href="#">Outros</a></li>
+
+
+                </ul>
+            </div>
+
+            <!-- SIDEBAR SECUNDARIA 3 -->
+            <div class="sidebar__left-secondary side__3">
+                <ul>
+                    <span>Campanhas Criteria</span>
+                    <li><a href="#">Todas as Campanhas</a></li>
+                    <span>Ofertas Públicas</span>
+                    <li><a href="#">Todas as ofertas</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- dropdown com fixed -->
+    <div class="content-sideleft drop-voador drop-voador-1">
+        <li class="nav-item dropdown-sidemenu">
+            <div class="dropdown dropright">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" data-submenu>
+                    Dropdown
+                </button>
+
+                <div class="dropdown-menu">
+                    <div class="dropdown dropright dropdown-submenu">
+                        <button class="dropdown-item dropdown-toggle" type="button"
+                            data-toggle="dropdown">Action</button>
+
+                        <div class="dropdown-menu">
+                            <button class="dropdown-item" type="button">Sub action</button>
+
+                            <div class="dropdown dropright dropdown-submenu">
+                                <button class="dropdown-item dropdown-toggle" type="button">Another sub
+                                    action</button>
+
+                                <div class="dropdown-menu">
+                                    <button class="dropdown-item" type="button">Sub action</button>
+                                    <button class="dropdown-item" type="button">Another sub action</button>
+                                    <button class="dropdown-item" type="button">Something else here</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </div>
+
+    <!-- modal para o mobile -->
+    <div class="modais-grupo-1 ">
+        <div class="modal" id="modalMenu1">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Opção X
+                        <ion-icon type="button" class="close" data-dismiss="modal" aria-hidden="true" name="close">
+                        </ion-icon>
+
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a href="#">Opção x</a></li>
+                        <li><a href="#">Opção x</a></li>
+                        <li><a href="#">Opção x</a></li>
+                        <li><a href="#">Opção x</a></li>
+                        <li> <a data-toggle="modal" href="#modalMenu2">Opçao Y <ion-icon name="chevron-forward-outline">
+                                </ion-icon></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modalMenu2">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Opção Y
+                        <ion-icon type="button" class="close" data-dismiss="modal" aria-hidden="true" name="close">
+                        </ion-icon>
+
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a href="#">Opção Y</a></li>
+                        <li><a href="#">Opção Y</a></li>
+                        <li><a href="#">Opção Y</a></li>
+                        <li><a href="#">Opção Y</a></li>
+                        <li> <a data-toggle="modal" href="#modalMenu3">Opçao Z <ion-icon name="chevron-forward-outline">
+                                </ion-icon></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modalMenu3">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Opção Z
+
+                        <ion-icon type="button" class="close" data-dismiss="modal" aria-hidden="true" name="close">
+                        </ion-icon>
+
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a href="#">Opção Z</a></li>
+                        <li><a href="#">Opção Z</a></li>
+                        <li><a href="#">Opção Z</a></li>
+                        <li><a href="#">Opção Z</a></li>
+                        <li> <a data-toggle="modal" href="#modalMenu4">Opçao ZZ
+                                <ion-icon name="chevron-forward-outline"> </ion-icon></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modalMenu4">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Opção Z
+
+                        <ion-icon type="button" class="close" data-dismiss="modal" aria-hidden="true" name="close">
+                        </ion-icon>
+
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><a href="#">Opção Final</a></li>
+                        <li><a href="#">Opção Final</a></li>
+                        <li><a href="#">Opção Final</a></li>
+                        <li><a href="#">Opção Final</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://django-criteria.s3.amazonaws.com/static/assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="https://django-criteria.s3.amazonaws.com/static/assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-submenu@3.0.1/dist/js/bootstrap-submenu.js"></script>
+
+    <!-- <script src="https://django-criteria.s3.amazonaws.com/static/assets/jquery-ui/jquery-ui.js"></script> -->
+    <!-- <script src="https://django-criteria.s3.amazonaws.com/static/assets/js/vendor/perfect-scrollbar.min.js"></script> -->
+    <!-- <script src="https://django-criteria.s3.amazonaws.com/static/assets/js/es5/script.min.js"></script> -->
+    <!-- <script src="https://django-criteria.s3.amazonaws.com/static/assets/js/es5/sidebar.large.script.min.js"></script> -->
+    <!-- <script src="https://django-criteria.s3.amazonaws.com/static/assets/js/vendor/datatables.min.js"></script> -->
+
+
+    <script>
+        /* lib para multilevel menu */
+        $('[data-submenu]').submenupicker();
+
+
+
+        //script abre sidebar
+        const botaoMenu = document.querySelector(".icon__click")
+        botaoMenu.addEventListener("click", abreSidebar)
+
+        function abreSidebar() {
+            document.body.classList.toggle("sidebar__aberta")
+        }
+        const itemsSideBar1 = document.querySelectorAll(".sidebar__left .lista li a")
+        const liSidebar = document.querySelectorAll(".sidebar__left ul li")
+        itemsSideBar1.forEach((i) => {
+            i.addEventListener("mouseenter", abreSidebar2)
+
+            function abreSidebar2(event) {
+                let datasetClick = i.dataset.open
+
+                itemsSideBar1.forEach((item) => {
+                    item.classList.remove("active")
+                })
+                event.target.classList.add("active")
+
+                const sideContent = document.querySelector(".side__content").dataset.open = datasetClick
+
+
+            }
+        })
+
+
+        //cria SideItem
+        //uso new Sideitem("li.js-posicao a", ".content-sideleft")
+
+        function Sideitem(item, sideItem) {
+            this.item = document.querySelector(item)
+            this.sideItem = document.querySelector(sideItem)
+
+            const itemConst = this.item
+            const sideItemConst = this.sideItem
+
+            this.item.addEventListener("click", apareceAi)
+            this.sideItem.addEventListener("mouseleave", function () {
+                setTimeout(() => {
+                    sideItemConst.style.display = "none"
+                }, 500);
+            })
+
+            function apareceAi() {
+                if (sideItemConst.style.display === "block") {
+                    sideItemConst.style.display = "none";
+                } else {
+                    console.log(itemConst);
+                    sideItemConst.style.top = getOffset(itemConst).top;
+                    sideItemConst.style.left = getOffset(itemConst).left;
+                    sideItemConst.style.display = "block";
+
+                }
+
+            }
+
+            function getOffset(value) {
+                value = value.getBoundingClientRect();
+                return {
+                    left: (value.right + window.scrollX) + 'px',
+                    top: (value.top + window.scrollY) + 'px'
+                }
+            }
+
+
+        }
+
+
+
+        //NO DESKTOP DROPDOWN
+        //NO MOBILE MODAL
+
+        const media = window.matchMedia('(min-width: 1024px)').matches
+
+        if (media) {
+            const itemDrop = new Sideitem("li.js-posicao a", ".drop-voador-1")
+        } else {
+            const itemAbreModal = document.querySelector("li.js-posicao a")
+            itemAbreModal.href = "#modalMenu1"
+            itemAbreModal.setAttribute("data-toggle", "modal")
+
+        }
+
+
+        //função z-index do MODAL
+        $(document).ready(function () {
+
+            $('#openBtn').click(function () {
+                $('#myModal').modal({
+                    show: true
+                })
+            });
+
+            $(document).on('show.bs.modal', '.modal', function (event) {
+                var zIndex = 1040 + (10 * $('.modal:visible').length);
+                $(this).css('z-index', zIndex);
+                setTimeout(function () {
+                    $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1)
+                        .addClass('modal-stack');
+                }, 0);
+            });
+
+
+        });
+    </script>
+
+</body>
+
+</html>
